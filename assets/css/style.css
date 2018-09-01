@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Permanent+Marker');
+
+/* font-family: 'Permanent Marker', cursive;
+font-family: 'Open Sans', sans-serif; */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../images/container-background.jpg");
+}
+header {
+    background: #09aa8f;
+    padding: 35px 0;
+    height: 225px;
+    border-bottom: 6px solid #0f0f08;
+}
+
+h1 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 80px;
+    opacity: 0.9;
+    text-align: center;
+    color: whitesmoke;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #0f0f08;
+}
+
+h2 {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    padding-top: 10px;
+    text-align: center;
+    color: #f071b7;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #0f0f08;
+}
+
+.quizContainer { 
+    text-align: center;
+    width: 700px;
+    height: 400px;
+    background: whitesmoke;
+    border: #0f0f08 6px solid;
+    border-radius: 10px;
+    margin: 50px auto;
+} 
+
+ul {
+    list-style: inline-block;
+}
+
+/* li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 10px;
+} */
+
+Input[type=radio] {
+    border: 1px solid black;
+    width: 10px;
+    height: 10px;
+}
+
+.welcomeMessage {
+    font-family: 'Open Sans', bold, sans-serif;
+    font-size: 40px;
+    padding: 20px;
+    line-height: 02.5ch;
+}
+ /* Quiz Classes */
+
+.startButton {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    text-align: center;
+    width: 200px;
+    height: 95px;
+    border: #0f0f08 solid 2px;
+    background-color: #09aa8f; 
+    border-radius: 5px;
+    transition-duration: 001s
+}
+
+.startButton:hover {
+    cursor: pointer;
+    background-color: #f071b7;
+}
+
+
+.nextButton {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 30px;
+    text-align: center;
+    width: 200px;
+    height: 95px;
+    border: #0f0f08 solid 2px;
+    background-color: #09aa8f; 
+    border-radius: 5px;
+    transition-duration: 001s
+}
+
+.nextButton:hover {
+    cursor: pointer;
+    background-color: #f071b7;
+}
+
+.question {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.choiceList {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.quizMessage {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
+
+.quizMessage {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    text-align: center;
+}
