@@ -137,7 +137,7 @@ li {
     cursor: pointer;
     background-color: #f071b7;
 }
-submitButton {
+#submitB {
     font-family: 'Permanent Marker', cursive;
     font-size: 20px;
     text-align: center;
@@ -151,7 +151,7 @@ submitButton {
     margin: 0px 258px;
 }
 
-submitButton:hover {
+#submitB:hover {
     cursor: pointer;
     background-color: #f071b7;
 }

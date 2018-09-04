@@ -38,7 +38,8 @@ setTimeout(timeUp, 1000 * 15);
         console.log("done");
         $("#time_left").text("Time's Up...Thanks for playing!");
         console.log("time is up");
-
+        console.log()
+        $("#submitB").click();
         // if timeUp then display TEST COMPLETED and xx out of xx questions
   }
   
@@ -51,18 +52,23 @@ function renderQuestion() {
         get("test_status").innerHTML = "Test completed";
         pos = 0;
         correct = 0;
-        return false;
-    }      
+        return false;   
+    } 
+    // else if(timeUp >= questions.length) {
+    //     get("test_status").innerHTML = "Test completed"
+    // }
+
+    
     get ("test_status").innerHTML = "Question "+(pos+1)+" of "+questions.length;
-    question = questions[pos][0];
-    chA = questions[pos][1];
-    chB = questions[pos][2];
-    chC = questions[pos][3];
-    test.innerHTML = "<h3>"+question+"</h3>";
-    test.innerHTML += "<li><input type='radio' name='choices' value='A'> "+chA+"</li><br>";
-    test.innerHTML += "<li><input type='radio' name='choices' value='B'> "+chB+"</li><br>";
-    test.innerHTML += "<li><input type='radio' name='choices' value='C'> "+chC+"</li><br><br>";
-    test.innerHTML += "<submitButton onclick='checkAnswer()'>Submit Answer";
+        question = questions[pos][0];
+        chA = questions[pos][1];
+        chB = questions[pos][2];
+        chC = questions[pos][3];
+        test.innerHTML = "<h3>"+question+"</h3>";
+        test.innerHTML += "<li><input type='radio' name='choices' value='A'> "+chA+"</li><br>";
+        test.innerHTML += "<li><input type='radio' name='choices' value='B'> "+chB+"</li><br>";
+        test.innerHTML += "<li><input type='radio' name='choices' value='C'> "+chC+"</li><br><br>";
+        test.innerHTML += "<button id='submitB' onclick='checkAnswer()'>Submit Answer";
     }
     function checkAnswer(){
         // use getElementsByName because we have an array which it will loop through
@@ -79,6 +85,7 @@ function renderQuestion() {
             renderQuestion();
     }
     window.addEventListener("load", renderQuestion, false);
+    
 
 
 
