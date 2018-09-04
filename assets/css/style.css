@@ -15,7 +15,35 @@ height: 400px;
 background: whitesmoke;
 border: #0f0f08 6px solid;
 border-radius: 10px;
-margin: 50px auto;
+margin: 25px auto;
+position: relative;
+}
+#time_left {
+    font-family: 'Permanent Marker', cursive;
+    font-size: 35px;
+    padding-top: 20px;
+    text-align: center;
+    color: #f071b7;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #0f0f08;
+    border: #0f0f08 6px solid;
+    width: 700px;
+    height: 100px;
+    margin: auto;
+    background: whitesmoke;
+    border: #0f0f08 6px solid;
+    border-radius: 10px;
+}
+#banner {
+    background: #09aa8f;
+    padding: 35px 0;
+    height: 50px;
+    border-bottom: 6px solid #0f0f08;
+    font-family: 'Permanent Marker', cursive;
+    font-size: 50px;
+    padding-top: 10px;
+    text-align: center;
+    color: #f071b7;
 }
 
 body {
@@ -23,20 +51,24 @@ body {
 }
 header {
     background: #09aa8f;
-    padding: 35px 0;
-    height: 225px;
-    border-bottom: 6px solid #0f0f08;
+    padding: 20px 0;
+    width: 900px;
+    height: 100px;
+    border: 6px solid #0f0f08;
+    margin: 30px auto 0px;
+    border-radius: 10px;
 }
 
 h3 {
     font-family: 'Open Sans', bold, sans-serif;
     font-size: 40px;
     padding: 20px;
+    text-align: center;
 }
 
 h1 {
     font-family: 'Permanent Marker', cursive;
-    font-size: 80px;
+    font-size: 50px;
     opacity: 0.9;
     text-align: center;
     color: whitesmoke;
@@ -47,14 +79,15 @@ h1 {
 h2 {
     font-family: 'Permanent Marker', cursive;
     font-size: 50px;
-    padding-top: 10px;
+    padding-top: 25px;
+    padding-bottom: 25px;
     text-align: center;
     color: #f071b7;
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: #0f0f08;
 }
 
-.quizContainer { 
+/* .quizContainer { 
     text-align: center;
     width: 700px;
     height: 400px;
@@ -62,7 +95,7 @@ h2 {
     border: #0f0f08 6px solid;
     border-radius: 10px;
     margin: 50px auto;
-} 
+}  */
 
 /* ul {
     list-style: inline-block;
@@ -72,14 +105,13 @@ li {
     font-family: 'Open Sans', sans-serif;
     font-size: 25px;
     list-style: none;
-    padding-left: 200px;
+    padding-left: 150px;
 }
 
-Input[type=radio] {
-    border: 1px solid black;
-    width: 10px;
-    height: 10px;
-}
+/* Input[type=radio] {
+    width: 30px;
+    height: 30px;
+} */
 
 .welcomeMessage {
     font-family: 'Open Sans', bold, sans-serif;
@@ -107,14 +139,16 @@ Input[type=radio] {
 }
 submitButton {
     font-family: 'Permanent Marker', cursive;
-    font-size: 30px;
+    font-size: 20px;
     text-align: center;
     width: 200px;
-    height: 95px;
+    height: 30px;
     border: #0f0f08 solid 2px;
     background-color: #09aa8f; 
     border-radius: 5px;
-    transition-duration: 001s
+    transition-duration: 001s;
+    position: absolute;
+    margin: 0px 258px;
 }
 
 submitButton:hover {
