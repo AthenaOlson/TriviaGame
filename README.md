@@ -1,2 +1,2 @@
 # TriviaGame
-due sept 30.2018 
+due sept 6.2018 
