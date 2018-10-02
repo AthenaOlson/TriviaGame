@@ -1,2 +1,2 @@
 # TriviaGame
-due sept 6.2018 
+https://athenaolson.github.io/TriviaGame/
